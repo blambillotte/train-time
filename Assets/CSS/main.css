@@ -20,5 +20,36 @@ h3 {
   text-align: center;
 }
 
+.glyphicon-minus-sign {
+  color: #eb2517;
+  cursor: pointer;
+}
+
+.glyphicon-pencil {
+  color: blue;
+  cursor: pointer;
+  padding-right:11px;
+}
+
 /* Sub-section comment block
    ========================================================================== */
+
+
+#train-modal {
+  background-color: rgba(128, 128, 128, 0.62);
+}
+
+#modal-content {
+  border-radius: 6px;
+  margin-top: 20vh;
+  background-color: white;
+}
+
+#modal-form {
+  padding: 30px 60px;
+
+}
+
+#modal-close {
+  margin-top: 0;
+}

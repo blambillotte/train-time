@@ -36,6 +36,7 @@
               <th>Frequency (min)</th>
               <th>Next Arrival</th>
               <th>Minutes Away</th>
+              <th>Edit/Delete</th>
             </tr>
           </table>
         </div>
@@ -72,6 +73,37 @@
   </div> <!-- End Panel -->
 
 </div> <!-- End Container -->
+
+<div id="train-modal" class="modal">
+  <div id="modal-content" class="modal-dialog panel panel-success">
+    <div class="panel-heading">
+      <button id="modal-close" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+      <h3 class="panel-title">Update Train
+      </h3>
+    </div>
+    <form id="modal-form">
+      <div class="form-group">
+        <label for="train-name">Train Name</label>
+        <input id="modal-train-name" type="text" class="form-control inputs" placeholder="Zepher" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <input id="modal-destination" type="text" class="form-control inputs" placeholder="City" required>
+      </div>
+      <div class="form-group">
+        <label for="first-start-time">Train Start Time</label>
+        <input id="modal-first-start-time" name="first-start-time" type="time" class="form-control inputs" placeholder="First Train Time" required>
+      </div>
+      <div class="form-group">
+        <label for="frequency">Frequency</label>
+        <input id="modal-frequency" type="number" class="form-control inputs" placeholder="(In Minutes)" required>
+      </div>
+
+      <button id="modal-submit-btn" class="btn btn-primary" type="submit">Save</button>
+    </form>
+  </div>
+</div>
+
 <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
